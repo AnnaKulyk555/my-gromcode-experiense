@@ -2,7 +2,7 @@
     color: green;
 }
 
-li {
+ul, ol {
     background-color: yellow;
 }
 
