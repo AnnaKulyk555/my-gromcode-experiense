@@ -2,19 +2,16 @@
     box-sizing: border-box;
 }
 
-.container {
-    min-height: 100vh;
+body {
     display: flex;
 }
 
 .block {
     height: 300px;
     width: 100vh;
-    display: flex;
 }
 
 .block_red {
-    display: flex;
     background-color: red;
 }
 
