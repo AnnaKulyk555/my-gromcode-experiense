@@ -54,8 +54,9 @@
 .eye {
     width: 30px;
     height: 30px;
-    color: grey;
-    position: absolute;
+    border-radius: 100%;
+    background-color: grey;
+    position: relative;
     z-index: 2;
 }
 
