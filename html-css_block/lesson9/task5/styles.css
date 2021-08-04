@@ -8,11 +8,10 @@
 
 .nav-list {
     margin: 0;
-    height: 40px;
 }
 
 .nav-item {
-    display: inline-block;
+    display: flex;
     float: left;
     margin-left: 16px;
     color: white;
