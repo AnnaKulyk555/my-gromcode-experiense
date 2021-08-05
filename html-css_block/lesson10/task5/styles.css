@@ -9,10 +9,7 @@ body {
 
 .header {
     display: flex;
-}
-
-.header__text {
-    margin: auto;
+    justify-content: center;
 }
 
 .articles-list {
