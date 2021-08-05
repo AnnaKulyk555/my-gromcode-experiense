@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 
-
 .header {
     display: flex;
 }
@@ -11,14 +10,17 @@
     margin: auto;
 }
 
+.articles-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .article {
     margin: 8px;
     padding: 16px;
     background-color: bisque;
-    display: flex;
     flex-basis: 300px;
     flex-grow: 1;
     flex-shrink: 0;
-    flex-wrap: wrap;
 }
 
