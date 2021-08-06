@@ -4,6 +4,9 @@ html {
 
 .list {
     list-style-type: none;
+}
+
+.list li {
     font-size: 1.5em;
 }
 
