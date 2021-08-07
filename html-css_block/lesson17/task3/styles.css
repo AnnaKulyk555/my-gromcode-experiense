@@ -2,47 +2,39 @@
     box-sizing: border-box;
 }
 
-.shopping-list_table {
-    overflow-x: auto;
-}
-
 table {
-    width: 500px;
     margin: 16px;
 }
 
-
 table,
-td,
-th {
+td {
     border: 1px solid black;
     border-collapse: collapse;
+    text-align: center;
 }
 
-td,
-th {
-    padding: 4px;
-    text-align: right;
-    line-height: 40px;
+tr:nth-child(2n) > td:nth-child(2n+1) {
+    background-color: black;
 }
 
-th {
-    background-color: aqua;
+tr:nth-child(2n+1) > td:nth-child(2n) {
+    background-color: black;
 }
 
-tbody tr:nth-child(odd) {
-    background-color: #f2f2f2;
+
+td:first-child,
+td:last-child {
+    border: none;
+    background-color: white !important;
 }
 
-tbody tr:hover {
-    background-color: #aaa;
-    color: white;
+tr:first-child > td,
+tr:last-child > td {
+    border: none;
+    background-color: white !important;
 }
 
-tfoot {
-    font-weight: 700;
-}
-
-caption {
-    margin-bottom: 8px;
+td {
+    height: 50px;
+    width: 50px;
 }
