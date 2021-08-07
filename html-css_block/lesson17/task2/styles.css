@@ -1,4 +1,6 @@
-
+* {
+    box-sizing: border-box;
+}
 .shopping-list_table {
     overflow-x: auto;
 }
@@ -20,7 +22,7 @@ td,
 th {
     padding: 4px;
     text-align: right;
-    line-height: 40px;
+    height: 40px;
 }
 
 th {
