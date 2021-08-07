@@ -1,6 +1,3 @@
-* {
-    box-sizing: border-box;
-}
 
 .shopping-list_table {
     overflow-x: auto;
@@ -44,5 +41,6 @@ tfoot {
 }
 
 caption {
+    padding: 0;
     margin-bottom: 8px;
 }
