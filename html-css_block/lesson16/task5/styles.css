@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+.big-form {
+    margin: 32px;
+}
+
+.form-input {
+    margin: 8px;
+}
+
+input[type="checkbox"][readonly] {
+    pointer-events: none;
+}
+
+.languages {
+    margin: 8px;
+}
