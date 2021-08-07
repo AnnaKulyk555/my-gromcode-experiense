@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+.shopping-list_table {
+    overflow-x: auto;
+}
+
+table {
+    width: 500px;
+    padding: 0;
+}
+
+table {
+    margin: 16px;
+}
+
+table,
+td,
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: 4px;
+    text-align: right;
+}
