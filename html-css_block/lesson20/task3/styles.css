@@ -4,9 +4,11 @@
 
 .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
+}
+
+.spinner {
+    margin: auto;
 }
 
 .spinner-text {
