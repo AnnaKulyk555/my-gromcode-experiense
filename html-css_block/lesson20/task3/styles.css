@@ -24,7 +24,7 @@
     border: 4px solid lightgrey;
     border-top-color: black;
     border-radius: 100%;
-    margin: 0 auto 8px;
+    margin: auto auto 8px;
     animation: spin 2s infinite linear;
 }
 
