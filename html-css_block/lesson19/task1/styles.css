@@ -1,5 +1,5 @@
-*{
-box-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
 
 .container {
@@ -14,13 +14,13 @@ box-sizing: border-box;
     opacity: 0.5;
     width: 100px;
     height: 100px;
-    transition-property: width, opacity;
-    transition-duration: 2s, 0.5s;
 }
 
 .rect:hover {
     width: 100%;
     opacity: 1;
+    transition-property: width, opacity;
+    transition-duration: 2s, 0.5s;
 }
 
 .linear {
