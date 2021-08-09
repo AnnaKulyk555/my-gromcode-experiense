@@ -42,6 +42,8 @@ body {
     color: white;
     height: 2em;
     margin-bottom: 0.5em;
+    display: flex;
+    align-items: center;
 }
 
 .nav-list-link {
