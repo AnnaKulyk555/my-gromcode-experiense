@@ -18,10 +18,11 @@ html {
     font-size: 5vw;
 }
 
+.font-in-rem {
+    font-size: 1.5rem;
+}
+
 .font-in-percents {
     font-size: 150%;
 }
 
-.font-in-rem {
-    font-size: 1.5rem;
-}
