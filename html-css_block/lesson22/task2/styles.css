@@ -10,16 +10,19 @@
 .navigation {
     background-color: #ff7f50;
     flex-grow: 1;
+    flex-basis: 50%;
 }
 
 .product-list {
     background-color: #006400;
     flex-grow: 1;
+    flex-basis: 50%;
 }
 
 .news {
     background-color: #0ff;
     flex-grow: 1;
+    flex-basis: calc(100% /3);
 }
 
 .text {
@@ -35,6 +38,7 @@
     .products {
         display: flex;
         flex-grow: 2;
+        flex-basis: calc(100%/3 *2);
     }
 }
 
