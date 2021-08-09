@@ -49,8 +49,7 @@ body {
 .nav-list-link {
     display: block;
     width: 100%;
-    margin-right: 0.5em;
-    margin-left: 0.5em;
+    margin: 0 0.5em;
     text-decoration: none;
     color: white;
     overflow: hidden;
