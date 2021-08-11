@@ -1,0 +1,47 @@
+@import 'layout.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+.block {
+  display: flex;
+  min-height: 200px;
+}
+
+.text {
+  font-family: Verdana, sans-serif;
+  padding: 8px;
+  margin: auto;
+  background-color: #faebd7;
+  border-radius: 4px;
+  text-transform: lowercase;
+}
+
+.content {
+  @include for-large-up {
+    display: flex;
+  }
+}
+
+.products {
+  &__navigation {
+    background-color: #ff7f50;
+    flex: 1;
+  }
+
+  &__product-list {
+    background-color: #006400;
+    flex: 1;
+  }
+
+  &__news {
+    background-color: #0ff;
+    flex: 1;
+  }
+
+  @include for-medium-up {
+    display: flex;
+    flex: 2;
+  }
+}

@@ -21,9 +21,11 @@
       color: yellow;
     }
 
-    &_active:hover {
-      .submenu {
-        display: block;
+    &_active {
+      &:hover {
+        .submenu {
+          display: block;
+        }
       }
     }
   }
