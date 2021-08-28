@@ -5,7 +5,7 @@
  * Чтобы eslint не ругался на эту ошибку, для этой задачи он отключен аннотацией eslint-disable
  * */
 
-const getAdults = obj => {
+export const getAdults = obj => {
   const adults = {};
   for (const key in obj) {
     if (obj[key] >= 18) {
