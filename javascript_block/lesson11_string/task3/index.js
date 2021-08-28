@@ -26,10 +26,9 @@ function splitString(text, chunkLen = 10) {
     strArray.push(chunk);
     startPosition += chunkLen;
   }
-  if (strArray[strArray.length - 1].length < chunkLen) {
-    strArray[strArray.length - 1] = strArray[strArray.length - 1].concat(
-      '.'.repeat(chunkLen - strArray[strArray.length - 1].length),
-    );
+  const test = strArray.length - 1;
+  if (strArray[test].length < chunkLen) {
+    strArray[test] = strArray[test].concat('.'.repeat(chunkLen - strArray[test].length));
   }
 
   return strArray;

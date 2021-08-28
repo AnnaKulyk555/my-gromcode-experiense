@@ -4,9 +4,9 @@ const withdraw = (clients, balances, client, amount) => {
   return balances[clientIndex] > amount ? (balances[clientIndex] -= amount) : -1;
 };
 
-//example 1:
+//  example 1:
 
-//input
+//  input
 const names = ['Ann', 'John', 'User'];
 const balances = [1400, 87, -6];
 console.log(withdraw(names, balances, 'Ann', 50));
