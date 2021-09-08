@@ -24,28 +24,22 @@ export class User {
   }
 
   static createEmpty() {
-    const user = {
-      name: '',
-      age: null,
-    };
-
-    return user;
+    return new this('', null);
   }
 }
 
 // test
-const user1 = new User('Tom', 17);
-console.log(user1);
-user1.sayHi();
-user1.requestNewPhoto();
-console.log(user1.setAge(15));
-console.log(user1.setAge(-15));
-console.log(user1.setAge(45));
-console.log(user1.createEmpty);
-console.log(User.createEmpty());
+// const user1 = new User('Tom', 17);
+// console.log(user1);
+// user1.sayHi();
+// user1.requestNewPhoto();
+// console.log(user1.setAge(15));
+// console.log(user1.setAge(-15));
+// console.log(user1.setAge(45));
+// console.log(User.createEmpty());
 
-const user2 = new User('Bob', 27);
-console.log(user2);
-user2.sayHi();
-console.log(user2.setAge(30));
-console.log(user2.setAge(-30));
+// const user2 = new User('Bob', 27);
+// console.log(user2);
+// user2.sayHi();
+// console.log(user2.setAge(30));
+// console.log(user2.setAge(-30));
