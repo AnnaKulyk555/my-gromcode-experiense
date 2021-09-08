@@ -4,7 +4,8 @@ export function getSection(num) {
   return spanElem.closest('.box').dataset.section;
 }
 
-console.log(getSection(3));
-console.log(getSection(6));
-console.log(getSection(1));
-console.log(getSection(5));
+// test
+// console.log(getSection(3));
+// console.log(getSection(6));
+// console.log(getSection(1));
+// console.log(getSection(5));
