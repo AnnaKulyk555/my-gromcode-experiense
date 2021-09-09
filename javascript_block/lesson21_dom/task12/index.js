@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 export function squaredNumbers() {
   const listItems = Array.from(document.querySelectorAll('.number'));
   listItems.forEach(listItem => {
