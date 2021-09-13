@@ -42,6 +42,9 @@ const inputElement = document.querySelector('.task-input');
 
 function onCreateTask(event) {
   const { value } = inputElement;
+  if (value === '') {
+    return;
+  }
   tasks.unshift({
     text: value,
     done: false,
