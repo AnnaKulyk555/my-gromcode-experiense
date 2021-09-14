@@ -8,4 +8,4 @@ const formatter = new Intl.DateTimeFormat('en', {
 export const getGreenWichTime = date => formatter.format(date);
 
 // test data
-console.log(getGreenWichTime(new Date()));
+// console.log(getGreenWichTime(new Date()));
