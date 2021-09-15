@@ -1,26 +1,42 @@
 export function getDiff(startDate, endDate) {
-  let dateDiff;
-  if (startDate > endDate) {
-    dateDiff = startDate - endDate;
-  } else {
-    dateDiff = endDate - startDate;
-  }
+  const diff = Math.abs(endDate - startDate);
+  const diffDate = new Date(diff);
+  const seconds = diffDate.getSeconds();
+  const minutes = diffDate.getMinutes();
+  const hours = diffDate.getUTCHours();
 
-  const daysDiff = Math.floor(dateDiff / (24 * 3600 * 1000));
-  const hoursDiff = Math.floor(dateDiff / (3600 * 1000));
-  const minsDiff = Math.floor(dateDiff / (60 * 1000));
-  const secDiff = Math.floor(dateDiff / 1000);
-  return `${daysDiff}d ${hoursDiff}h ${minsDiff}m ${secDiff}s`;
+  const days = Math.floor(diffDate / (1000 * 3600 * 24));
+
+  return `${days}d ${hours}h ${minutes}m ${seconds}s`;
 }
 
 // test data
-// const date1 = new Date(2021, 4, 29, 12, 30, 56);
-// const date2 = new Date(2021, 4, 15, 12, 10, 14);
-// console.log(date1);
-// console.log(date2);
-// const date3 = new Date(2021, 4, 2, 3, 20, 6);
-// const date4 = new Date(2021, 5, 2, 7, 6, 56);
-// console.log(date3);
-// console.log(date4);
-// console.log(getDiff(date1, date2));
-// console.log(getDiff(date3, date4));
+const date1 = new Date(2021, 4, 29, 12, 30, 50);
+const date2 = new Date(2021, 4, 29, 12, 30, 25);
+const date3 = new Date(2021, 3, 2, 18, 30, 10);
+const date4 = new Date(2021, 4, 3, 6, 30, 10);
+console.log(getDiff(date1, date2));
+console.log(getDiff(date3, date4));
+
+/**
+ * export function getDiff(startDate, endDate) {
+  let diff = Math.abs(endDate - startDate);
+
+  let seconds = 0;
+  let minutes = 0;
+  let hours = 0;
+  let days = 0;
+
+  //console.log(diff);
+  diff = (diff - (diff % 1000)) / 1000;
+  //console.log(diff);
+  diff = (diff - (seconds = diff % 60)) / 60;
+  //console.log(diff);
+  diff = (diff - (minutes = diff % 60)) / 60;
+  //console.log(diff);
+  days = (diff - (hours = diff % 24)) / 24;
+
+  return `${days}d ${hours}h ${minutes}m ${seconds}s`;
+}
+
+ */
