@@ -1,7 +1,6 @@
 import { renderTasks } from './renderer.js';
 import { getItem, setItem } from './storage.js';
 
-const createBtnElement = document.querySelector('.create-task-btn');
 const inputElement = document.querySelector('.task-input');
 
 export const onCreateTask = event => {
@@ -20,5 +19,3 @@ export const onCreateTask = event => {
   renderTasks();
   inputElement.value = '';
 };
-
-createBtnElement.addEventListener('click', onCreateTask);

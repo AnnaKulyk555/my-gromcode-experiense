@@ -1,6 +1,5 @@
 import { getItem, setItem } from './storage.js';
 import { renderTasks } from './renderer.js';
-import { listElem } from './appElems.js';
 
 export function updateTaskHandler(e) {
   if (!e.target.classList.contains('list__item-checkbox')) {
@@ -23,5 +22,3 @@ export function updateTaskHandler(e) {
 
   renderTasks();
 }
-
-listElem.addEventListener('click', updateTaskHandler);
